@@ -20,8 +20,6 @@
         {
             //bool load;
 
-            ProgressBar1.Value = 0;
-
             var client = new HttpClient();
             client.BaseAddress = new Uri("http://cambios.somee.com");
 
