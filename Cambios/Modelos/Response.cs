@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Cambios.Modelos
+﻿namespace Cambios.Modelos
 {
     public class Response
     {
-        public Type MyProperty { get; set; }
+        public bool isSuccess { get; set; }
+
+        public string Message { get; set; }
+
+        public object Result { get; set; }
 
     }
 }

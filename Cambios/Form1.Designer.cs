@@ -39,6 +39,7 @@ namespace Cambios
             this.LabelResultado = new System.Windows.Forms.Label();
             this.LabelStatus = new System.Windows.Forms.Label();
             this.ProgressBar1 = new System.Windows.Forms.ProgressBar();
+            this.ButtonTroca = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -96,6 +97,7 @@ namespace Cambios
             // 
             // ButtonConverter
             // 
+            this.ButtonConverter.Enabled = false;
             this.ButtonConverter.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ButtonConverter.Location = new System.Drawing.Point(714, 69);
             this.ButtonConverter.Name = "ButtonConverter";
@@ -103,6 +105,7 @@ namespace Cambios
             this.ButtonConverter.TabIndex = 6;
             this.ButtonConverter.Text = "Converter";
             this.ButtonConverter.UseVisualStyleBackColor = true;
+            this.ButtonConverter.Click += new System.EventHandler(this.ButtonConverter_Click);
             // 
             // LabelResultado
             // 
@@ -130,11 +133,23 @@ namespace Cambios
             this.ProgressBar1.Size = new System.Drawing.Size(208, 23);
             this.ProgressBar1.TabIndex = 9;
             // 
+            // ButtonTroca
+            // 
+            this.ButtonTroca.Enabled = false;
+            this.ButtonTroca.Location = new System.Drawing.Point(726, 176);
+            this.ButtonTroca.Name = "ButtonTroca";
+            this.ButtonTroca.Size = new System.Drawing.Size(107, 51);
+            this.ButtonTroca.TabIndex = 10;
+            this.ButtonTroca.Text = "Troca";
+            this.ButtonTroca.UseVisualStyleBackColor = true;
+            this.ButtonTroca.Click += new System.EventHandler(this.ButtonTroca_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 450);
+            this.Controls.Add(this.ButtonTroca);
             this.Controls.Add(this.ProgressBar1);
             this.Controls.Add(this.LabelStatus);
             this.Controls.Add(this.LabelResultado);
@@ -164,6 +179,7 @@ namespace Cambios
         private System.Windows.Forms.Label LabelResultado;
         private System.Windows.Forms.Label LabelStatus;
         private System.Windows.Forms.ProgressBar ProgressBar1;
+        private System.Windows.Forms.Button ButtonTroca;
     }
 }
 
